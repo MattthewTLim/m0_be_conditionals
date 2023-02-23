@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "is number_teachers equal to string_teachers?"  number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "is number_teachers not equal to number_students?" number_students != numberStudents
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "is number_students greater than or equal to 20?" number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "number_students greater than or equal to 21?" number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "is number_students less than or equal to 20?" number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+"is number_students less than or equal to 21?" number_students <= 21
 # this should print: true
 
 
@@ -54,20 +61,27 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+# Compares if 4 is less than 9, prints true 
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: Explain. Creates a variable named books with a value of 3. Compares if 4 is less than the value of book (3)
+# Prints false
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: Explain. Creates a variable named friends with the value of 6 and another variable siblings with the value of 6
+# Compares if the variable friends value is greater then the value of the variable siblings.
+# Prints True
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+# Creates a variable named attendees with the value of 9 and a variable named meals with a value of 8
+# Compares if the value of the variable atendees is not equal to the the value of the variable meals
+# Prints False
 
 
 #-------------------
@@ -90,15 +104,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play || loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts loves_to_play || age
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: The final line printed to false because the value of loves to play is true while the value of age is 1
+# The computer does not see these values as equal because they are not exactly the same so it prints to false. It would be possible to fix this with and if statement.
